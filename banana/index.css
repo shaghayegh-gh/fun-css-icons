@@ -1,0 +1,97 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.banana {
+  display: inline-block;
+  width: 126px;
+  height: 319px;
+  position: relative;
+}
+.banana::before {
+  content: "";
+  width: 76px;
+  height: 224px;
+  background: yellow;
+  position: absolute;
+
+  border-bottom-right-radius: 100%;
+  transform: rotate(5deg);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: rotate3d(1, 1, 1, 45deg);
+  box-shadow: rgb(0 0 0 / 35%) 0px -38px 34px -32px inset;
+}
+
+.banana::after {
+  content: "";
+  width: 56px;
+  height: 213px;
+  background: #ffe700;
+  position: absolute;
+  border-bottom-right-radius: 100%;
+  transform: rotate(5deg);
+  position: absolute;
+  bottom: 7px;
+  left: 25px;
+  transform: rotate3d(0, -1, 1, 47deg);
+  box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px,
+    rgb(0 0 0 / 35%) 0px -44px 34px -43px inset;
+}
+
+.banana > .skin {
+  position: absolute;
+  width: 70px;
+  height: 110px;
+  background: lemonchiffon;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  left: 56px;
+  top: 14px;
+  z-index: 1;
+  transform: rotate3d(0, 5, 1, 30deg);
+  box-shadow: rgb(247, 234, 184, 0.75) 0px -2px 15px 0px inset,
+    rgb(249, 223, 121, 0.75) 0px -10px 20px 0px inset,
+    rgba(17, 17, 26, 0.08) 0px 4px 16px;
+}
+
+.banana > .skin::after {
+  content: "";
+  width: 73px;
+  height: 128px;
+  background: cornsilk;
+  right: -49px;
+  position: absolute;
+  z-index: 1;
+  border-bottom-right-radius: 125%;
+  border-top-right-radius: 23px;
+  top: 87px;
+  transform: rotate3d(12, 10, -5, 59deg);
+  border: 1px solid #f8e79f;
+  box-shadow: rgb(247 234 184 / 50%) 0px -20px 10px 0px inset,
+    rgb(249 223 121 / 50%) 0px -10px 10px 0px inset,
+    rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.banana > .skin::before {
+  content: "";
+  width: 44px;
+  height: 114px;
+  background: cornsilk;
+  left: -53px;
+  position: absolute;
+  z-index: 1;
+  border-top-left-radius: 21px;
+
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 10%;
+  top: 80px;
+  transform: rotate3d(-12, 2, 32, 41deg);
+  border: 1px solid #f8e79f;
+  box-shadow: rgb(247, 234, 184, 0.5) 0px -2px 15px 0px inset,
+    rgb(249, 223, 121, 0.5) 0px -10px 20px 0px inset,
+    rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
