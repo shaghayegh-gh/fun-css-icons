@@ -18,7 +18,7 @@
 
 .face-girl {
   /*   display: flex;
-    justify-content: center; */
+  justify-content: center; */
   width: 55px;
   height: 62px;
   background: antiquewhite;
@@ -51,7 +51,7 @@
   border: 2px solid antiquewhite;
   top: 17px;
 }
-.face-girl > .glasses {
+.face-girl > .eyes {
   display: flex;
   justify-content: space-between;
   width: 38px;
@@ -63,27 +63,42 @@
   top: 5px;
 }
 
-.face-girl > .glasses > .glass-left {
-  border: 5px solid white;
+.face-girl > .eyes > .eye-left {
+  border: 1px solid black;
   display: block;
+  width: 14px;
+  height: 14px;
+  background: white;
+  right: -10px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.face-girl > .eyes > .eye-right {
+  border: 1px solid black;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  right: -10px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.face-girl > .eyes > .eye-right:before,
+.face-girl > .eyes > .eye-left:after {
+  content: "";
   width: 6px;
   height: 6px;
   background: black;
-  right: -10px;
-  border-radius: 100%;
-  outline: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
 }
-.face-girl > .glasses > .glass-right {
-  border: 8px solid white;
-  display: block;
-  width: 6px;
-  height: 6px;
-  background: black;
-  right: -10px;
-  border-radius: 100%;
-  outline: 1px solid black;
+.face-girl > .eyes > .eye-right:before {
+  right: 9px;
 }
-
+.face-girl > .eyes > .eye-left:after {
+  left: 5px;
+}
 .face-girl > .lips {
   z-index: 2;
   width: 17px;
